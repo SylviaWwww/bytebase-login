@@ -5,7 +5,7 @@ import github from "../../assets/github.svg";
 import microsoft from "../../assets/microsoft.svg";
 
 
-export default function RightPanel({ onGithubLogin }) {
+export default function RightPanel({ onGithubLogin, user }) {
   return (
     <div className="right-container">
       <div className="login-box">
@@ -58,6 +58,29 @@ export default function RightPanel({ onGithubLogin }) {
         <div className="register-text">
           没有账户？ <a href="#">注册</a>
         </div>
+
+        {/* user information(login) */}
+        {user && (
+          <div className="github-user-card">
+            <img
+              src={user.avatar_url}
+              alt={user.login}
+              className="github-avatar"
+            />
+            <div className="github-user-info">
+              <div className="github-name">{user.name || user.login}</div>
+              <div className="github-login">@{user.login}</div>
+              <a
+                href={user.html_url}
+                target="_blank"
+                rel="noreferrer"
+                className="github-link"
+              >
+                查看 GitHub 主页
+              </a>
+            </div>
+          </div>
+        )}
 
       </div>
     </div>
