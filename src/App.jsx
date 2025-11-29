@@ -16,8 +16,11 @@ function parseUserFromUrl() {
   }
 }
 
-const BACKEND_BASE_URL = "http://localhost:4000";
-
+const BACKEND_BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:4000"
+    : "https://bytebase-login-server.onrender.com";
+    
 export default function App() {
   const [user, setUser] = useState(null);
 
