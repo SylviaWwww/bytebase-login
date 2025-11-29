@@ -1,0 +1,141 @@
+.right-container {
+  width: 50%;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+.logo {
+  width: 240px;
+  margin-bottom: 50px;
+}
+
+.welcome-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.welcome-desc {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+/* OAuth 按钮通用样式 */
+.oauth-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+  cursor: pointer;
+  font-size: 14px;
+  justify-content: center;
+  transition: background 0.2s;
+  margin-bottom: 12px;
+}
+
+.oauth-btn:hover {
+  background: #f9fafb;
+}
+
+.oauth-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.divider-text {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Email Login */
+.label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.25);
+  outline: none;
+}
+
+/* Primary Button */
+.primary-btn {
+  width: 100%;
+  padding: 10px 12px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primary-btn:hover {
+  background: #4f46e5;
+}
+
+.register-text {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.register-text a {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .left-panel {
+    display: none;
+  }
+
+  .right-container {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .login-box {
+    max-width: 90%;
+  }
+}

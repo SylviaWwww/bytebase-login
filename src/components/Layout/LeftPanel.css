@@ -1,0 +1,32 @@
+.left-panel {
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(180deg, #6a8dff, #6b4df6);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* image on top */
+  overflow: hidden;         /* cut redundancy */
+  padding: 0;
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
+}
+
+
+/* mobile: letf disappear */
+@media (max-width: 900px) {
+  .left-panel {
+    display: none;
+  }
+
+  .right-container {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .login-box {
+    max-width: 90%;
+  }
+}

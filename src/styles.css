@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #f5f5f7;
+  color: #1f2933;
+}
+
+.bb-page {
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* login box */
+.bb-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+  padding: 32px 28px;
+}
+
+/* Logo */
+.bb-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.bb-logo-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: #111827;
+  color: #f9fafb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.bb-logo-text {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Tab */
+.bb-tab-row {
+  margin-bottom: 12px;
+}
+
+.bb-tab-active {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  color: #4f46e5;
+  cursor: pointer;
+  border-bottom: 2px solid #4f46e5;
+}
+
+/* Table */
+.bb-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bb-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.bb-required {
+  color: #dc2626;
+}
+
+.bb-input {
+  margin-top: 6px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bb-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.25);
+}
+
+/* password: left-label right-forgot link */
+.bb-password-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+/* password input */
+.bb-password-input-wrapper {
+  position: relative;
+}
+
+.bb-password-toggle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* main button */
+.bb-primary-btn {
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #4f46e5;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+
+.bb-primary-btn:hover {
+  background: #4338ca;
+}
+
+.bb-primary-btn:active {
+  transform: translateY(1px);
+}
+
+/* link */
+.bb-link {
+  font-size: 13px;
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.bb-link:hover {
+  text-decoration: underline;
+}
+
+.bb-forgot-link {
+  font-weight: 400;
+}
+
+/* seperator */
+.bb-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 8px;
+}
+
+.bb-divider-line {
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.bb-divider-text {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* GitHub login */
+.bb-github-btn {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 9px 12px;
+  background: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bb-github-btn:hover {
+  background: #f9fafb;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+}
+
+.bb-github-icon {
+  font-size: 16px;
+}
+
+/* page foot */
+.bb-footer-text {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* GitHub user card */
+.bb-user-panel {
+  width: 100%;
+  max-width: 420px;
+}
+
+.bb-user-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bb-user-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+}
+
+.bb-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bb-user-name {
+  font-weight: 600;
+}
+
+.bb-user-login {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* desktop */
+@media (min-width: 850px) {
+  .bb-page {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bb-card {
+    max-width: 420px;
+  }
+
+  .bb-user-panel {
+    max-width: 320px;
+  }
+}
