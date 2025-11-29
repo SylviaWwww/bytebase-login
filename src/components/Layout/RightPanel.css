@@ -1,9 +1,11 @@
 .right-container {
   width: 50%;
-  padding: 40px 60px;
+  height: 100vh;
+  background: #f3f4f6;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 60px;
 }
 
 .login-box {
@@ -13,8 +15,8 @@
 }
 
 .logo {
-  width: 240px;
-  margin-bottom: 50px;
+  width: 200px;
+  margin-bottom: 24px;
 }
 
 .welcome-title {
@@ -26,33 +28,36 @@
 .welcome-desc {
   color: #6b7280;
   font-size: 14px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
-/* OAuth 按钮通用样式 */
+/* OAuth button */
 .oauth-btn {
   display: flex;
   align-items: center;
   gap: 10px;
   width: 100%;
-  padding: 10px 14px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  background: #f9fafb;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  border: 1px solid #9fa1a4;
+  border-radius: 3px;
+  background: #f3f4f6;
   cursor: pointer;
-  font-size: 14px;
-  justify-content: center;
-  transition: background 0.2s;
-  margin-bottom: 12px;
+  font-size: 15px;
+  justify-content: start;
+
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  transition: background 0.15s ease, box-shadow 0.15s ease;
 }
 
 .oauth-btn:hover {
   background: #f9fafb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .oauth-icon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 /* Divider */
@@ -60,17 +65,17 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 20px 0;
+  margin: 28px 0;
 }
 
 .divider-line {
   flex: 1;
   height: 1px;
-  background: #e5e7eb;
+  background: #d1d5db;
 }
 
 .divider-text {
-  font-size: 12px;
+  font-size: 13px;
   color: #9ca3af;
 }
 
@@ -78,44 +83,51 @@
 .label {
   display: block;
   text-align: left;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 6px;
+  color: #374151;
 }
 
 .input {
   width: 100%;
-  padding: 10px 12px;
-  border-radius: 8px;
+  padding: 14px 14px;
+  border-radius: 3px;
   border: 1px solid #e5e7eb;
-  margin-bottom: 16px;
+  background: #f9fafb;
+  margin-bottom: 20px;
   font-size: 14px;
 }
 
 .input:focus {
   border-color: #6366f1;
-  box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.25);
+  background: white;
+  box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.35);
   outline: none;
 }
 
 /* Primary Button */
 .primary-btn {
   width: 100%;
-  padding: 10px 12px;
+  padding: 14px 12px;
   background: #6366f1;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 14px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: background 0.15s ease, box-shadow 0.15s ease;
 }
 
 .primary-btn:hover {
   background: #4f46e5;
+  box-shadow: 0 4px 12px rgba(79,70,229,0.35);
 }
 
 .register-text {
-  margin-top: 16px;
+  margin-top: 20px;
   font-size: 14px;
   color: #6b7280;
 }
@@ -125,14 +137,15 @@
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
-  .left-panel {
-    display: none;
-  }
+.register-text a:hover {
+  text-decoration: underline;
+}
 
+@media (max-width: 900px) {
   .right-container {
     width: 100%;
     padding: 40px 20px;
+    height: auto;
   }
 
   .login-box {

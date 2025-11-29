@@ -1,5 +1,9 @@
 import React from "react";
 import "./RightPanel.css";
+import google from "../../assets/google.svg";
+import github from "../../assets/github.svg";
+import microsoft from "../../assets/microsoft.svg";
+
 
 export default function RightPanel({ onGithubLogin }) {
   return (
@@ -20,17 +24,17 @@ export default function RightPanel({ onGithubLogin }) {
         {/* OAuth Login Buttons */}
         <div className="oauth-section">
           <button className="oauth-btn google-btn">
-            <img src="/google-icon.svg" className="oauth-icon" />
+            <img src={google} className="oauth-icon" />
             继续使用 Google
           </button>
 
           <button className="oauth-btn github-btn" onClick={onGithubLogin}>
-            <img src="/github-icon.svg" className="oauth-icon" />
+            <img src={github} className="oauth-icon" />
             继续使用 GitHub
           </button>
 
           <button className="oauth-btn ms-btn">
-            <img src="/microsoft-icon.svg" className="oauth-icon" />
+            <img src={microsoft} className="oauth-icon" />
             继续使用 Microsoft Account
           </button>
         </div>
@@ -44,8 +48,8 @@ export default function RightPanel({ onGithubLogin }) {
 
         {/* Email Login */}
         <div className="email-section">
-          <label className="label">电子邮件地址 *</label>
-          <input type="email" className="input" placeholder="you@example.com" />
+          {/* <label className="label">电子邮件地址 *</label> */}
+          <input type="email" className="input" placeholder="电子邮件地址 *" />
 
           <button className="primary-btn">继续</button>
         </div>
