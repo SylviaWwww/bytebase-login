@@ -5,7 +5,7 @@ import GithubUserCard from "./GithubUserCard";
  * Bytebase Login
  */
 
-const BACKEND_BASE_URL = "https://******.onrender.com"; // change later
+const BACKEND_BASE_URL = "https://bytebase-login-server.onrender.com"; // change later
 
 function LoginPage({ user }) {
   // press then going to github
